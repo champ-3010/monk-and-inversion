@@ -1,0 +1,16 @@
+T = int(input(""))
+
+for i in range(T):
+
+    N=int(input()) 
+    mat=[]
+    count =0
+    for j in range(N):
+        mat.append([int(y) for y in input().split()]) 
+    for x in range(N):
+        for y in range(N):
+            for x2 in range(x,N):
+                for y2 in range(y,N):
+                    if(mat[x][y]>mat[x2][y2]):
+                        count=count+1
+    print(count)                    
